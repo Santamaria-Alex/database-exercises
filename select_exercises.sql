@@ -1,31 +1,25 @@
 USE codeup_test_db;
 
-SELECT 'Pink Floyd albums:' AS '';
-SELECT name FROM albums WHERE artist = 'Pink Floyd';
+SELECT name AS 'Pink Floyd albums:' FROM albums WHERE artist = 'Pink Floyd';
 -- SELECT * FROM albums WHERE artist = 'Pink FLoyd';
 
 SELECT '===================';
 
-SELECT 'Sgt. Pepper''s was released on:' AS '';
-SELECT release_date FROM albums WHERE name = 'Sgt. Pepper''s Lonely Hearts Club Band';
+SELECT release_date AS 'Sgt. Pepper''s was released on:' FROM albums WHERE name = 'Sgt. Pepper''s Lonely Hearts Club Band';
 -- SELECT * FROM albums WHERE release_date = ;
 
 SELECT '===================';
 
-SELECT 'Nevermind''s genre is:' AS '';
-SELECT genre FROM albums WHERE name = 'Nevermind';
+SELECT genre AS 'Nevermind''s genre is:' FROM albums WHERE name = 'Nevermind';
 
 SELECT '===================';
 
-SELECT 'All of the albums released in the 1990''s are: ' AS '';
-SELECT name FROM albums WHERE release_date BETWEEN 1990 AND 1999;
+SELECT name AS 'All of the albums released in the 1990''s are:' FROM albums WHERE release_date BETWEEN 1990 AND 1999;
 
 SELECT '===================';
 
-SELECT 'Albums with less than 20 million sales:' AS '';
-SELECT name FROM albums WHERE sales < 20.0;
+SELECT name AS 'Albums with less than 20 million sales:' FROM albums WHERE sales < 20.0;
 
 SELECT '===================';
 
-SELECT 'All of the Rock albums are:' AS '';
-SELECT name FROM albums WHERE genre = 'rock';
+SELECT name AS 'All of the Rock albums are:' FROM albums WHERE genre = 'rock';
